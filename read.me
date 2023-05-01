@@ -1,0 +1,39 @@
+RxJS: Reactive Javascript
+
+RxJS is a library for composing asynchronous and event-based programs by using observable sequeces. 
+It provides one core type, the observable, satellite types (Observer, Schedulers, Subjects) and 
+operators inspired by array methods (map, filter, reduce, every, etc) to allow handling asynchronouse events as collections.
+
+==> Core type: observable
+==> Satellite types: observer, schedulers, Subjects
+==> Operators: map, filter, reduce, every, etc
+
+NOTE: Observable generates the data, source can be array, dom, etc
+
+==> Use subscribe to execute or consume an observable
+==> Observable handler are the callback function that we need to provide inside the subscribe methods
+    example$.subscribe()
+==> we can executed a observable returned from a function
+    example().subscribe()
+==> we can provide the observable error handler. before rxjs 7 we can provide the error callback
+    example().subscribe(
+        value => console.log(value),
+        err => console.log(err)
+    )
+
+==> in rxjs7 we can pass an observable object to the subscribe method instead of passing the error callback
+    example().subscribe({
+        next: value => console.log(value),
+        error: err => console.log(err)
+    })
+
+    here next is for value notification error is for error notification and we can have the complete notification as well.
+
+
+==> Observables
+==> Subscriptions
+==> Observers
+==> Creation Functions
+==> Pipeable Operators
+==> Subjects
+
