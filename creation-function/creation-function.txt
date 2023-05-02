@@ -1,0 +1,9 @@
+of
+from
+fromEvent
+interval
+timer
+forkJoin
+combineLatest
+
+NOTE: Creation Functions are also called Creation Operators
