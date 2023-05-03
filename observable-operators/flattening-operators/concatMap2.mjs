@@ -27,3 +27,6 @@ source$
         error: err => console.log(err),
         complete: () => console.log('completed')
     });
+
+
+    // to handle concurrency concatMap quequed the values generated from the source observable and doen'st start the next one until finishes the previous one

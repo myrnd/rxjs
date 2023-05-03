@@ -1,0 +1,16 @@
+// Subject: is the combination of observable and observer 
+
+// It follows the hot observable pattern and multi cast the value to all the subscriber
+
+// It also exposes the next, error and complete method
+
+// It works as source of emittion
+
+// It behaves like a hot observable. so every subscriber will get the same value at the same time
+
+//.subscribe()   .next(value)   .error(error)  .complete()
+
+// BehaviourSubject: It's an extension of a regular Subject but while creating a BehaviourSubject we need to provide some intial value
+
+// BehaviourSubject has it's memory to store initial value and when a user subscribe it the user will get the inital value immediately as next notification
+
